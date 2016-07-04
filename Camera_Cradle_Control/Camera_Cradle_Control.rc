@@ -1,0 +1,222 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Camera_Cradle_Control.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Camera_Cradle_Control.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CAMERA_CRADLE_CONTROL_DIALOG DIALOGEX 0, 0, 231, 274
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "差速式云台控制软件"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "串口号：",IDC_STATIC,25,18,33,10
+    COMBOBOX        IDC_COMBO_Port_List,54,16,39,42,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "连接",IDC_BUTTON_Port_Connect,150,16,33,13
+    LTEXT           "相机自转角度",IDC_STATIC,51,40,41,9
+    LTEXT           "相机俯仰角度",IDC_STATIC,137,40,41,9
+    EDITTEXT        IDC_EDIT_Self_Rotate_Angle,58,64,26,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_SLIDER_Motor_0_Position,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,31,168,167,19
+    CONTROL         "",IDC_SLIDER_Motor_1_Position,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,30,199,167,19
+    LTEXT           "#1舵机位置",IDC_STATIC,140,87,38,9
+    LTEXT           "#0舵机位置",IDC_STATIC,53,87,41,9
+    CTEXT           "未连接",IDC_STATIC_Port_State,107,17,29,11,SS_CENTERIMAGE | WS_BORDER
+    EDITTEXT        IDC_EDIT_Motor_1_Position,144,110,26,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_Motor_0_Position,58,110,26,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "相机初始姿态（自转角和俯仰度均为0）对应的舵机位置值 仅在串口连接后相机未处于初始姿态时使用下面控件做调整",IDC_STATIC,26,222,178,18
+    EDITTEXT        IDC_EDIT_Motor_0_Init,58,243,23,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Motor_1_Init,134,243,23,12,ES_AUTOHSCROLL
+    LTEXT           "#0舵机:",IDC_STATIC,27,244,27,9
+    LTEXT           "#1舵机:",IDC_STATIC,104,244,31,9
+    PUSHBUTTON      "应用",IDC_BUTTON_Apply_Init,173,243,28,12
+    CONTROL         "",IDC_MSCOMM1,"{648A5600-2C6E-101B-82B6-000000000014}",WS_TABSTOP,202,7,22,22
+    EDITTEXT        IDC_EDIT_Pitch_Angle,144,64,26,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "舵机位置驱动模式",IDC_RADIO_Motor_Drive,"Button",BS_AUTORADIOBUTTON,32,133,66,11
+    CONTROL         "云台转角驱动模式",IDC_RADIO_Angle_Drive,"Button",BS_AUTORADIOBUTTON,129,134,66,11
+    CTEXT           "(-90.0~90.0)",IDC_STATIC_Self_Rotate_Range,46,53,52,9
+    CTEXT           "(-90.0~90.0)",IDC_STATIC_Pitch_Range,131,52,54,9
+    LTEXT           "（0~4095）",IDC_STATIC,52,98,41,9
+    LTEXT           "（0~4095）",IDC_STATIC,139,98,41,9
+    CTEXT           "【无效解】",IDC_STATIC_Error,98,105,34,9,SS_CENTERIMAGE
+    CTEXT           "【】",IDC_STATIC_Slider_0,75,155,25,9,SS_CENTERIMAGE
+    CTEXT           "【】",IDC_STATIC_Slider_1,74,187,26,9,SS_CENTERIMAGE
+    PUSHBUTTON      "转到",IDC_BUTTON_Slider_0_Value_Implement,114,154,28,12
+    PUSHBUTTON      "转到",IDC_BUTTON_Slider_1_Value_Implement,114,186,28,12
+    CTEXT           "#0位置",IDC_STATIC_Indication_0,34,155,31,9,SS_CENTERIMAGE
+    CTEXT           "#1位置",IDC_STATIC_Indication_1,34,187,30,9,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Camera_Cradle_Control.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "Camera_Cradle_Control.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CAMERA_CRADLE_CONTROL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 267
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CAMERA_CRADLE_CONTROL_DIALOG DLGINIT
+BEGIN
+    IDC_MSCOMM1, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    0
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Camera_Cradle_Control.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

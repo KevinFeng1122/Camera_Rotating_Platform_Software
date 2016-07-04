@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Camera_Cradle_Control", "Camera_Cradle_Control\Camera_Cradle_Control.vcproj", "{F02B1AF1-376A-4633-93F8-C5823917A3D4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F02B1AF1-376A-4633-93F8-C5823917A3D4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F02B1AF1-376A-4633-93F8-C5823917A3D4}.Debug|Win32.Build.0 = Debug|Win32
+		{F02B1AF1-376A-4633-93F8-C5823917A3D4}.Release|Win32.ActiveCfg = Release|Win32
+		{F02B1AF1-376A-4633-93F8-C5823917A3D4}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
